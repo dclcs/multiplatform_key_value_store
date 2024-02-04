@@ -11,7 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
   key_value_store:
-    path: ../key_value_store
+    git:
+      url: https://github.com/dclcs/multiplatform_key_value_store.git
+      path: key_value_store
   shared_preferences: ^2.2.2
 
 dev_dependencies:
