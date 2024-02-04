@@ -5,19 +5,19 @@ author: Iiro Krankka <iiro.krankka@gmail.com>
 homepage: https://github.com/roughike/multiplatform_key_value_store
 
 environment:
-  sdk: ">=2.0.0 <3.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  shared_preferences: ^0.4.3
   key_value_store:
     path: ../key_value_store
+  shared_preferences: ^2.2.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  mockito: ^3.0.0
+  mockito: ^5.4.4
 
 flutter:
   plugin:
