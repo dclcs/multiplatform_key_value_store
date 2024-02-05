@@ -23,7 +23,7 @@ class FlutterKeyValueStore extends KeyValueStore {
   Future<bool> clear() => _preferences.clear();
 
   @override
-  bool getBool(String key) => _preferences.getBool(key);
+  bool getBool(String key) => _preferences.getBool(key) ?? false;
 
   @override
   double getDouble(String key) => _preferences.getDouble(key);
