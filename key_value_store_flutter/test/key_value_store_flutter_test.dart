@@ -7,8 +7,8 @@ class MockSharedPrefs extends Mock implements SharedPreferences {}
 
 void main() {
   group('A group of tests', () {
-    MockSharedPrefs mockSharedPrefs;
-    FlutterKeyValueStore keyValueStore;
+    MockSharedPrefs mockSharedPrefs = MockSharedPrefs();
+    FlutterKeyValueStore keyValueStore = FlutterKeyValueStore(mockSharedPrefs);
 
     setUp(() {
       mockSharedPrefs = MockSharedPrefs();

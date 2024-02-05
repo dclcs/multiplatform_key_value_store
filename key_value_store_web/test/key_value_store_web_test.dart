@@ -10,8 +10,8 @@ class MockStorage extends Mock implements Storage {}
 
 void main() {
   group('A group of tests', () {
-    MockStorage mockStorage;
-    WebKeyValueStore localStorage;
+    MockStorage mockStorage = MockStorage();
+    WebKeyValueStore localStorage = WebKeyValueStore(mockStorage);
 
     setUp(() {
       mockStorage = MockStorage();
